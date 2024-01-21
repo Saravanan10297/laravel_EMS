@@ -44,6 +44,7 @@ Route::get('/', function () {
 //      return 'this is a wonderfull year 2024';
 // })->name('saro');
 Route::get('/reg',[Log::class,'Register'])->name('employee.Register');
+Route::post('/reg/store',[Log::class,'storereg'])->name('employee.storer_reg');
 Route::get('/AAA',[Employeedetails::class,'Index'])->name('employee.index');
 Route::get('/employees/create',[Employeedetails::class,'create'])->name('employee.create');
 Route::post('/employees/stored',[Employeedetails::class,'store'])->name('employee.store');
